@@ -77,7 +77,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 200px;
   box-sizing: border-box;
 }
 .top {
@@ -85,6 +84,7 @@ ul {
   justify-content: space-between;
   padding-right: 80px;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .top-right {
   display: flex;
@@ -104,6 +104,8 @@ input {
   border-radius: 20px;
   border: none;
   background-color: rgb(156, 154, 154);
+  max-width: 600px; /* ✅ limits size on big screens */
+  min-width: 150px;
 }
 
 .bottom {
