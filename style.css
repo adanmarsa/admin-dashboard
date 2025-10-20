@@ -1,0 +1,219 @@
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 200px 4fr;
+  background-color: rgb(51, 56, 56);
+  width: 100%;
+  height: 100vh;
+}
+
+/* side bar styling  */
+.side {
+  background-color: rgb(1, 90, 162);
+  grid-column: 1/2;
+  grid-row: 1/3;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.sidebar-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar-top img {
+  color: white;
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+}
+.sidebar-top h1 {
+  font-size: 30px;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li,
+.menu-two li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  font-size: 27px;
+}
+.menu li:hover,
+.menu-two li:hover {
+  background-color: #334155; /* Slightly lighter hover */
+}
+.menu img,
+.menu-two img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%); /* Makes SVGs white if they’re dark */
+}
+/* header styling */
+.header {
+  background-color: rgb(247, 244, 244);
+  padding: 20px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  box-sizing: border-box;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 80px;
+  gap: 10px;
+}
+.top-right {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+.input-side {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+}
+input {
+  width: 900px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(156, 154, 154);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 1px;
+  margin-bottom: 5px;
+}
+.top img {
+  width: 30px;
+  height: 30px;
+}
+.buttons {
+  margin-right: 20px;
+  display: flex;
+  gap: 20px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  border-radius: 18px;
+  background-color: rgb(1, 90, 162);
+  font-size: 18px;
+  border: none;
+}
+button:hover {
+  background-color: rgb(11, 108, 188);
+}
+.dp {
+  background-color: yellow;
+}
+.bottom img {
+  width: 30px;
+  height: 30px;
+}
+/* styling main */
+.main {
+  background-color: rgb(177, 175, 175);
+  padding: 20px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  gap: 30px;
+}
+.projects-section {
+  flex: 3;
+}
+.projects-section h2 {
+  margin-bottom: 15px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.card {
+  background-color: white;
+  border-left: 6px solid #facc15;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.card-icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  justify-content: flex-end;
+  transition: ease;
+}
+.card:hover {
+  background-color: rgb(244, 241, 241);
+}
+.sidebar-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.announcemnet-card,
+.trending-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  width: 400pxpx;
+}
+.announcemnet-card,
+.trending-card:hover {
+  background-color: rgb(244, 241, 241);
+}
+.trending-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trending-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
