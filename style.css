@@ -70,7 +70,7 @@ ul {
 }
 /* header styling */
 .header {
-  background-color: red;
+  background-color: rgb(247, 244, 244);
   padding: 40px;
   grid-column: 2/3;
   grid-row: 1/2;
